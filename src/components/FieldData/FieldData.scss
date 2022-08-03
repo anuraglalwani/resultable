@@ -1,0 +1,20 @@
+.ant-input[disabled] {
+  color: black !important;
+  background-color: #d4f1ef !important;
+  border-color: #d4f1ef !important;
+  box-shadow: none !important;
+  cursor: auto !important;
+  opacity: 1 !important;
+  width: fit-content !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+.ant-input {
+  // width: fit-content !important;
+  margin-top: 5px !important;
+  border: 0.3px solid #1890ff !important;
+}
+
+.head {
+  width: 200px !important;
+}

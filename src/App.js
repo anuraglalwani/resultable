@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Chart from "./components/Chart/Chart";
+import Result from "./components/Result/Result";
+// import FieldData from "./components/FieldData/FieldData";
+// import SearchInput from "./components/SearchInput/SearchInput";
+import "./App.scss";
+import "antd/dist/antd.min.css";
+import Map from "./components/Map/Map";
+//import ConnectIcon from "./components/ConnectIcon/ConnectIcon";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+       <div style={{display:"flex", margin:"15%"}}>
+        <Result />
+        {/* <Chart /> */}
+        
+        </div>  
+        {/* <Map/>  */}
+     
     </div>
   );
 }

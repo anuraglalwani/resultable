@@ -1,0 +1,37 @@
+.result {
+
+  width: 380px;
+  
+  .top {
+    display: flex;
+    align-items: center !important;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #d4f1ef;
+    input{
+      margin-left: 4%;
+      outline-color:  #1890ff !important;
+    } 
+    p{
+      margin-left: 15px ;
+      margin-top: 14px;
+    }
+   
+    span{
+      margin-left: 70px;
+      cursor: pointer;
+    }
+  }
+
+  .rows{
+    border-right: 0.3px solid #4d95ff;
+    border-top: 0.3px solid #4d95ff;
+
+  }
+  .description{
+    margin-top: 30px;
+  }
+}
+
+

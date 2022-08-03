@@ -1,0 +1,27 @@
+.map{
+      .fields {
+        width: 700px;
+        height: fit-content;
+        margin-left: 2%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+       
+            // .field-row1 {
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: space-between;
+            //   }
+              .field-row0 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .right{
+                  display: flex;;
+                  margin-left: 40px;
+                }
+              }
+
+      }
+}
+
+  

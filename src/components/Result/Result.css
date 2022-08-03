@@ -1,0 +1,30 @@
+.result {
+  width: 380px;
+}
+.result .top {
+  display: flex;
+  align-items: center !important;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #d4f1ef;
+}
+.result .top input {
+  margin-left: 4%;
+  outline-color: #1890ff !important;
+}
+.result .top p {
+  margin-left: 15px;
+  margin-top: 14px;
+}
+.result .top span {
+  margin-left: 70px;
+  cursor: pointer;
+}
+.result .rows {
+  border-right: 0.3px solid #4d95ff;
+  border-top: 0.3px solid #4d95ff;
+}
+.result .description {
+  margin-top: 30px;
+}/*# sourceMappingURL=Result.css.map */

@@ -1,0 +1,18 @@
+.map .fields {
+  width: 700px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 2%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.map .fields .field-row0 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.map .fields .field-row0 .right {
+  display: flex;
+  margin-left: 40px;
+}/*# sourceMappingURL=Map.css.map */
