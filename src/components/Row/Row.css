@@ -18,7 +18,7 @@
   margin-right: 5%;
   cursor: pointer;
 }
-.row h3 {
+.row h6 {
   margin-top: 10px;
 }
 .row p {
@@ -32,21 +32,21 @@
 .green-color {
   border-left: 4px solid #3bc171;
 }
-.green-color h3 {
+.green-color h6 {
   color: #3bc171;
 }
 
 .orange-color {
   border-left: 4px solid #ffab00;
 }
-.orange-color h3 {
+.orange-color h6 {
   color: #ffab00;
 }
 
 .red-color {
   border-left: 4px solid #d4361b;
 }
-.red-color h3 {
+.red-color h6 {
   color: #d4361b;
 }
 

@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import Row from "../Row/Row";
 import "./Result.scss";
 import ColorDetail from "../ColorDetail/ColorDetail";
-import {handleClick} from "../../Functions/Function"
-
+import {handleClick} from "../../Functions/Function";
+import {handleSelectAll} from "../../Functions/Function"
+import {handleActive,setRowData} from "../../Functions/Function";
 const values = [
   { id: "1", percent: "50", products: "90" },
   { id: "2", percent: "20", products: "50" },
@@ -38,16 +39,22 @@ function Result() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    setData(values);
+  setRowData(setData,values)
+  
   }, [data]);
 
-  const handleSelectAll = (e) => {
-    setIsCheckAll(!isCheckAll);
-    setIsCheck(data.map((li) => li.id));
-    if (isCheckAll) {
-      setIsCheck([]);
-    }
-  };
+
+  // const handleSelectAll = (e) => {
+  //   console.log(e.target)
+  //   setIsCheckAll(!isCheckAll);
+  //   setIsCheck(data.map((li) => li.id));
+  //   if (isCheckAll) {
+  //     setIsCheck([]);
+  //   }
+  // };
+  // function handleActive() {
+  //   setActive(!active);
+  // }
 
   // function handleClick(e) {
   //   const { id, checked } = e.target;
@@ -58,38 +65,30 @@ function Result() {
   //     setIsCheck(isCheck.filter((item) => item !== id));
   //   }
   // }
-  function handleChange(e){
-    handleClick(e,setIsCheck,isCheck)
-  }
-
-  function handleActive() {
-    setActive(!active);
-  }
-
   return (
     <div className="result">
       <div className="top">
         <input
           type="checkbox"
           id="myCheck"
-          onChange={handleSelectAll}
+          onChange={(e)=>handleSelectAll(setIsCheckAll,isCheckAll,setIsCheck,data)}
           checked={isCheckAll}
         />
         <p>Import_Jio Mart_excelsheet_300SKU</p>
 
         {active ? (
           <span
-            onClick={handleActive}
+            onClick={()=>handleActive(active,setActive)}
             className="material-symbols-sharp"
-            data-testid="expand_less"
+            id="#expand_less"
           >
             expand_less
           </span>
         ) : (
           <span
-            onClick={handleActive}
+            onClick={()=>setActive(!active)}
             className="material-symbols-sharp"
-            data-testid="expand_more"
+            id="#expand_more"
           >
             expand_more
           </span>
@@ -105,10 +104,10 @@ function Result() {
                 id={value.id}
                 percent={value.percent}
                 products={value.products}
-                handleClick={handleClick}   
-                isCheck={isCheck}
-                setIsCheck={setIsCheck}             
+                handleClick={handleClick}
                 isChecked={isCheck.includes(value.id)}
+                isCheck={isCheck}
+                setIsCheck={setIsCheck}
               />
             );
           })}

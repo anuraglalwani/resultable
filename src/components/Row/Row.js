@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Row.scss";
-import {handleClick} from "../../Functions/Function"
+//import {handleClick} from "../../Functions/Function"
 
-function Row({ id, percent, products, isChecked, isCheck, setIsCheck}) {
+function Row({ id, percent, products, isChecked, isCheck, setIsCheck,handleClick}) {
   const [color, setColor] = useState();
   const [bgColor, setBgcolor] = useState();
   
@@ -19,6 +19,8 @@ function Row({ id, percent, products, isChecked, isCheck, setIsCheck}) {
     }
   }, [percent]);
 
+
+
   return (
     <div className={"row " + color + " " + (isChecked ? bgColor : "")}>
       <input
@@ -26,11 +28,10 @@ function Row({ id, percent, products, isChecked, isCheck, setIsCheck}) {
         type="checkbox"
         id={id}
         className="row-input"
-        onChange={(e)=>handleClick(e,isCheck, setIsCheck)}
+        onChange={(e) => handleClick(e, isCheck, setIsCheck)}
         checked={isChecked}
       />
-
-      <h3>{percent}%</h3>
+      <h6>{percent}%</h6>
       <p>{products} Products</p>
       <span className="material-symbols-sharp">edit</span>
     </div>

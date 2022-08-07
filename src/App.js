@@ -5,16 +5,19 @@ import Result from "./components/Result/Result";
 import "./App.scss";
 import "antd/dist/antd.min.css";
 import Map from "./components/Map/Map";
+import Source from "./components/Source/Source";
 //import ConnectIcon from "./components/ConnectIcon/ConnectIcon";
+import {setRowData} from "./Functions/Function"
 function App() {
   return (
     <div className="">
-       <div style={{display:"flex", margin:"15%"}}>
-        <Result />
-        {/* <Chart /> */}
+       {/* <div style={{display:"flex", margin:"15%"}}> */}
+         {/* <Result setRowData={setRowData} />  */}
+         {/* <Chart />  */}
         
-        </div>  
+        {/* </div>   */}
         {/* <Map/>  */}
+        <Source/>
      
     </div>
   );

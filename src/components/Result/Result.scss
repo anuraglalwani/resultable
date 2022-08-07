@@ -1,6 +1,6 @@
 .result {
 
-  width: 380px;
+  width: fit-content;
   
   .top {
     display: flex;
@@ -19,7 +19,7 @@
     }
    
     span{
-      margin-left: 70px;
+      margin-left: 0px;
       cursor: pointer;
     }
   }

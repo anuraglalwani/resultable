@@ -23,7 +23,7 @@ $red: #d4361b;
     margin-right: 5%;
     cursor: pointer;
   }
-  h3{
+  h6{
     margin-top: 10px;
    }
    p{
@@ -36,19 +36,19 @@ $red: #d4361b;
 }
 
 .green-color {
-  h3 {
+  h6 {
     color: $gr;
   }
   border-left: 4px solid $gr;
 }
 .orange-color {
-  h3 {
+  h6 {
     color: $or;
   }
   border-left: 4px solid $or;
 }
 .red-color {
-  h3 {
+  h6 {
     color: $red;
   }
   border-left: 4px solid $red;

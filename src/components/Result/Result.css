@@ -1,5 +1,7 @@
 .result {
-  width: 380px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .result .top {
   display: flex;
@@ -18,7 +20,7 @@
   margin-top: 14px;
 }
 .result .top span {
-  margin-left: 70px;
+  margin-left: 0px;
   cursor: pointer;
 }
 .result .rows {
